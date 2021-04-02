@@ -1,0 +1,66 @@
+@media (max-width: 1000px) {
+    main {
+        section {
+            &.benefits {
+                .benefits__container {
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .benefit {
+                        margin: 40px 0;
+                        width: 100%;
+                    }
+                }
+            }
+            &.about {
+                .about__container {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    .about__description {
+                        margin: 0 5%;
+                        .app-links {
+                            margin-top: 25px;
+                            justify-content: center;
+                        }
+                    }
+                }
+                .about__phone {
+                    width: auto;
+                    height: 200px;
+                    margin-right: 5%;
+                    margin-top: 20px;
+                }
+            }
+            &.cuisine {
+                .cuisine__container {
+                    ul {
+                        li {
+                            flex-basis: 300px;
+                        }
+                    }
+                }
+                .progress__container {
+                    padding: 65px 0;
+                    .progress-bar {
+                        ul {
+                            flex-direction: column;
+                            li {
+                                margin: 40px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer__container {
+            align-items: center;
+            flex-direction: column-reverse;
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+}

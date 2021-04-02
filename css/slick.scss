@@ -1,0 +1,123 @@
+/* Slick slider styles */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &.dragging {
+        cursor: pointer;
+    }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    width: 100%;
+    min-height: 1px;
+    display: none;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+    &.dragging img {
+        pointer-events: none;
+    }
+    .slick-initialized & {
+        display: block;
+    }
+    .slick-loading & {
+        visibility: hidden;
+    }
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+    .slide {
+        width: 70%;
+        z-index: 1;
+        color: red;
+        text-align: center;
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: -90px;
+    left: 0; 
+	right: 0; 
+	z-index: 3;
+    list-style: none;
+	li {
+		appearance: none;
+		outline: none;
+		width: .7rem;
+		height: .7rem;
+		border-radius: 50%;
+		background: #fff;
+		margin: 6px;
+		transition: background 0.2s 0.2s ease-out, 0.2s opacity;
+		opacity: 0.2;
+        cursor: pointer;
+		button {
+            display: none;
+		}
+		&.slick-active {
+			background: #fff;
+			opacity: 1;
+		}
+		&:hover {
+			opacity: 1;
+			transition: 0.2s opacity;
+		}
+	}
+}

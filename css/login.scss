@@ -1,0 +1,62 @@
+@import 'variables.scss';
+
+main {
+    section {
+        &.popup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            position: absolute;
+            left: -100%;
+            opacity: 0;
+            top:0;
+            width: 100%;
+            min-height: 100vh;
+            backdrop-filter: blur(20px);
+            transition: .5s;
+            background-color: rgba(0, 0, 0, 0.2);
+            .popup__box {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 20px 60px;
+                border-radius: 20px;
+                background-color: white;
+                width: auto;
+                .popup-close {
+                    span {
+                        cursor: pointer;
+                        &:after {
+                            right: 30px;
+                            top: 30px;
+                            transform: rotateZ(45deg);
+                            @extend %pseudo-line;
+                            background-color: black;
+                        }
+                        &:before {
+                            right: 30px;
+                            top: 30px;
+                            transform: rotateZ(-45deg);
+                            @extend %pseudo-line;
+                            background-color: black;
+                        }
+                    }
+                }
+                .popup__title {
+                    color: #4f52a7;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .popup__form {
+                    margin-top: 40px;
+                }
+            }
+            &.showed{
+                left: 0%;
+                opacity: 1;
+            }
+        }
+    }
+}

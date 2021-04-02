@@ -1,0 +1,83 @@
+main section.popup .popup__box .popup-close span:after, main section.popup .popup__box .popup-close span:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: white;
+}
+
+main section.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+  position: absolute;
+  left: -100%;
+  opacity: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+main section.popup .popup__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 20px 60px;
+  border-radius: 20px;
+  background-color: white;
+  width: auto;
+}
+
+main section.popup .popup__box .popup-close span {
+  cursor: pointer;
+}
+
+main section.popup .popup__box .popup-close span:after {
+  right: 30px;
+  top: 30px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  background-color: black;
+}
+
+main section.popup .popup__box .popup-close span:before {
+  right: 30px;
+  top: 30px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  background-color: black;
+}
+
+main section.popup .popup__box .popup__title {
+  color: #4f52a7;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+main section.popup .popup__box .popup__form {
+  margin-top: 40px;
+}
+
+main section.popup.showed {
+  left: 0%;
+  opacity: 1;
+}
+/*# sourceMappingURL=login.css.map */

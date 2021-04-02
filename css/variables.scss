@@ -1,0 +1,18 @@
+$burger-width: 20px;
+$color: #4f52a7;
+
+%pseudo-line {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: $burger-width;
+    background-color: white;
+}
+
+%pseudo-textline {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    background-color: #f57365;
+}
