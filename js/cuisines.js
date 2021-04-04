@@ -1,15 +1,15 @@
 var isAscending = true; // сортировка по возрастанию
 var recipesList = [ // массив рецептов
-    { photo: "../img/italian.png", name: "italian", count: 327 },
-    { photo: "../img/indian.png", name: "indian", count: 856 },
-    { photo: "../img/french.png", name: "french", count: 27 },
-    { photo: "../img/steakhouse.png", name: "steakhouse", count: 174 },
-    { photo: "../img/seafood.png", name: "seafood", count: 731 },
-    { photo: "../img/sushi.png", name: "sushi", count: 237 },
-    { photo: "../img/mexican.png", name: "mexican", count: 529 },
-    { photo: "../img/chinese.png", name: "chinese", count: 145 },
-    { photo: "../img/pizza.png", name: "pizza", count: 317 },
-    { photo: "../img/american.png", name: "american", count: 1437 }
+    { photo: "img/italian.png", name: "italian", count: 327 },
+    { photo: "img/indian.png", name: "indian", count: 856 },
+    { photo: "img/french.png", name: "french", count: 27 },
+    { photo: "img/steakhouse.png", name: "steakhouse", count: 174 },
+    { photo: "img/seafood.png", name: "seafood", count: 731 },
+    { photo: "img/sushi.png", name: "sushi", count: 237 },
+    { photo: "img/mexican.png", name: "mexican", count: 529 },
+    { photo: "img/chinese.png", name: "chinese", count: 145 },
+    { photo: "img/pizza.png", name: "pizza", count: 317 },
+    { photo: "img/american.png", name: "american", count: 1437 }
 ];
 fillRecipesList();
 
